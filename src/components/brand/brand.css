@@ -1,0 +1,18 @@
+.app-brand{
+    padding: 3rem 1rem;
+    background-color:var(--color-blue);
+    width:100wh;
+}
+.app-brand-title{
+text-align: center;
+color: var(--color-white);
+padding: 2rem;
+font-size: 30px;
+}
+.app-brand-cards{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 2rem 8rem;
+}

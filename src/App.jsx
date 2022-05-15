@@ -11,10 +11,7 @@ function App(){
        <Header/>
       </div>
       <Brand/>
-      <QuiSommeNous/>
-      <Features/>
-      <Posiblity/>
-      <Cta/>
+      <QuiSommeNous/> 
       <Blog/>
       <Footer/>
     </div>

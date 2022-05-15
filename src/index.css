@@ -1,11 +1,14 @@
 @import url('https://fonts.googleleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;60;700&family');
 :root{
+    --color-blue:#4B64F2;
+    --color-blue-hover:#68D9CE;
     --color-golden:#DCCA87;
     --color-black:#0C0C0C;
     --colo-gray:#545454;
     --color-crimson: #F5EFD8;
     --color-gray:#AAAAAA;
     --color-white:#FFFFFF;
+    --color-white-hover:rgba(27,156,252,0,1);
 }
 *{
     box-sizing: border-box;
@@ -41,4 +44,3 @@ a{
         transform: translateY(0) ;
     }
 }
-    
