@@ -1,6 +1,6 @@
 import React from 'react'
-import { Brand, Cta, Navbar} from './components';
-import {Footer,Blog,Posiblity,Features,QuiSommeNous,Header} from './containers';
+import { Brand, Navbar} from './components';
+import {Footer,Blog,QuiSommeNous,Header} from './containers';
 import './index.css';
 import './App.css';
 function App(){
