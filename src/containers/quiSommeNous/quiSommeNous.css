@@ -1,5 +1,14 @@
-.app-container-section-tree div{
+.app-container-section-tree{
     display: flex;
-   flex-direction: row;
    background-color: red;
+}
+.app-section-tree-image{
+    max-width: 50%;
+}
+.app-section-tree-image img{
+width:50%;
+}
+.app-qui-somme-nous{
+    width: 50%;
+    align-items:center;
 }
