@@ -4,7 +4,7 @@ import './header.css';
 import images from '../../constants/images';
 function Header() {
   return (
-    <div className='app__header__wrapper section_header'>
+    <div className='app__header__wrapper section_header'> 
       <div className="app__wrapper_info">
         { /* <SubHeading/>*/} <h4>Le but du Innovation & Informatique</h4>
         <h1 className='app__header__h1'>Pourquoi le club a-t-il été créé ?</h1>
