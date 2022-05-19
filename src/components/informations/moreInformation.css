@@ -1,0 +1,12 @@
+
+      .app-container{
+    padding: 1rem 3rem;
+    }
+    .title h1{
+        font-size: 35px;
+    }
+    .body p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    

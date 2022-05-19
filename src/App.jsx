@@ -1,19 +1,18 @@
 import React from 'react'
-import { Brand, Navbar} from './components';
-import {Footer,Blog,QuiSommeNous,Header} from './containers';
+import { Brand} from './components';
+/*import { Route, BrowserRouter as Router,Routes } from 'react-router-dom';*/
+import {  QuiSommeNous, Header } from './containers';
 import './index.css';
 import './App.css';
-function App(){
+function App() {
   return (
     <div className='App'>
       <div className='gradient_pg'>
-       <Navbar/>
-       <Header/>
+        <Header />
       </div>
-      <Brand/>
-      <QuiSommeNous/> 
-      <Blog/>
-      <Footer/>
+      <Brand />
+      <QuiSommeNous />
+      
     </div>
   )
 }

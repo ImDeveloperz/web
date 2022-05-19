@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+/*import {FiFacebook, FiInstagrame,FiWhatsapp} from 'react-icons/fi'*/
 import images from '../../constants/images';
 import NavbarList from '../navbarListe';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -16,9 +17,6 @@ const Navbar = () => {
       <ul className="app__navbar__links">
         <div className="app__navbar__links__list">
           <NavbarList />
-          <li className="p__opensans" ><a href='#Programation'>Programation</a></li>
-          <li className="p__opensans" ><a href='#Devloppement'>Devloppement Web</a></li>
-          <li className="p__opensans" ><a href='#Robotique'>Robotique</a></li>
         </div>        
         <div className="app__navbar__links__contact">
           Contacter Nous

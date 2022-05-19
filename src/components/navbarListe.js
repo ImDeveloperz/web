@@ -5,6 +5,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+import Link from '@mui/material/Link';
 export default function NavbarList() {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
@@ -25,14 +26,24 @@ export default function NavbarList() {
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Programation"/>
+          <ListItemButton sx={{ pl: 3 }}>
+          <Link href="/Blog/account?name=Programation
+" underline="none">
+  <ListItemText primary="Programation"/>
+  </Link>
           </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
+          <ListItemButton sx={{ pl: 3 }}>
+          <Link href="/Blog/account?name=Robotique
+" underline="none">
             <ListItemText primary="Robotique"/>
+            </Link>
           </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Devoloppement"/>
+          <ListItemButton sx={{ pl: 3 }}>
+          <Link href="/Blog/account?name=Devolopement
+" underline="none">
+            <ListItemText primary="Devloppement"/>
+            </Link>
+
           </ListItemButton>
         </List>
       </Collapse>

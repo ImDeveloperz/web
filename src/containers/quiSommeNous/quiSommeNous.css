@@ -1,14 +1,23 @@
 .app-container-section-tree{
     display: flex;
-   background-color: red;
+   
 }
 .app-section-tree-image{
-    max-width: 50%;
+    width: 50%;
+    justify-content: last baseline;
+    padding:0rem 4rem;
+    height: 100vh;
 }
 .app-section-tree-image img{
-width:50%;
+width:100%;
+height: 100vh;
 }
 .app-qui-somme-nous{
-    width: 50%;
-    align-items:center;
+    padding: 2rem 4rem;
+    width: 50% ;
+    align-items: center ;
+}
+.app-qui-title{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
