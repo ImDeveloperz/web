@@ -16,9 +16,6 @@ const Routing = () => {
             <Routes>
                 <Route exact path="/" element={<App />} ></Route>
                 <Route exact path="/blog" element={<Blog />} ></Route>
-                <Route exact path="/Blog/account?name=Robotique" element={<BlogRobotique />} ></Route>
-                <Route exact path="/Blog/account?name=Programmation" element={<BlogProgrammation />} ></Route>
-                <Route exact path="/Blog/account?name=Devoloppement" element={<BlogDevoloppement />} ></Route>
             </Routes> 
             <Footer />
         </Router>

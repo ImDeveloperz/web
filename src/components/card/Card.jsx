@@ -2,8 +2,8 @@ import React from 'react'
 import './card.css'
 const Card = ({ cardTitle, imageUrl, cardBody }) => {
     return (
-        <div className="card-container">
-            <div className="card-image">
+       <div className="card-container">
+             <div className="card-image">
                 <img src={imageUrl} alt='' />
             </div>
             <div className="card-content">

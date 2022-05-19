@@ -3,7 +3,9 @@ import blogData from '../../constants/blogData'
 /*const payload= BlogData.map((b) =>{ return b.payload.title})
 console.log(payload);*/
 /*const paragraphe= payload.map((b) =>{ return b.type})
+
 console.log(paragraphe);*/
+import {Article} from '../../components'
 import {
   Link,
   useLocation 
@@ -12,7 +14,6 @@ const BlogData = blogData.payload.map((blog) =>{ return blog})
 console.log(BlogData)
 export default function Blog() {
   return (
-  
 <QueryParamsDemo/>
     
   );
@@ -25,10 +26,8 @@ function useQuery() {
 
   return React.useMemo(() => new URLSearchParams(search), [search]);
 }
-
 function QueryParamsDemo() {
   let query = useQuery();
-
   return (
     <div>
       <div>
@@ -44,7 +43,6 @@ function QueryParamsDemo() {
             <Link to="/Blog/account?name=Devolopement">Devolopement</Link>
           </li>
         </ul>
-        
         <Child name={query.get("name")} />
       </div>
     </div>
@@ -52,7 +50,9 @@ function QueryParamsDemo() {
 }
 
 function Child({ name }) {
-  
+<div className="child">
+  <Article />
+</div>
    /* <div>
    {name ? (
             /*<Paragraphe content={}/>
