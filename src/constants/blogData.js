@@ -1,4 +1,4 @@
-import images from '../assets/images.png'
+import images from './images'
 const creatorPara = ({ content }) => {
     return () => {
         <div className="creat__para">
@@ -19,7 +19,7 @@ const creatorImage = ({ alt, url }) => {
         return null;
     return () => {
         <div>
-            <img alt={alt} url={url} />
+            <img alt={alt} url={images[{url}]} />
         </div>
     }
 }
@@ -37,7 +37,7 @@ const blogData = {
                 },
                 {
                     type: 'image',
-                    payload: creatorImage({ alt: 'image2', url:{ images}})
+                    payload: creatorImage({ alt: 'image2', url:'header'})
                 }
             ]
         }, {
@@ -51,7 +51,7 @@ const blogData = {
                 },
                 {
                     type: 'image',
-                    payload: creatorImage({ alt: 'image3', url:{ images} })
+                    payload: creatorImage({ alt: 'image3', url: 'header'})
                 }
             ]
         }, {
@@ -65,7 +65,7 @@ const blogData = {
                 },
                 {
                     type: 'image',
-                    payload: creatorImage({ alt: 'image1', url: { images} })
+                    payload: creatorImage({ alt: 'image1', url: 'header'})
                 }
             ]
         }
