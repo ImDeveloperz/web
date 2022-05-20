@@ -19,21 +19,21 @@ padding: 0 2rem;
 }
 .app__footer-links_contact,
 .app__footer-links_logo,
-.app__footer-links_work
+.app_footer-links_work
 {
-    padding-top: 0rem;
+padding-top: 0rem;
 flex:1;
 margin:1rem;
 text-align:center;
 }
+
 .app__footer-links_logo{
     margin-bottom: 6rem;
-    margin-right: 8rem;
+    margin-right: 0rem;
 }
 .app__footer-links_logo img{
     width: 200px;
     margin-bottom: 0,75rem;
-
 }
 .footer__copyright{
     margin-left: 3rem;

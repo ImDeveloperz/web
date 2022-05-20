@@ -1,6 +1,6 @@
 .app-brand{
     padding: 3rem 1rem;
-    background-color:var(--color-blue);
+    background:var(--color-blue);
     width:100wh;
 }
 .app-brand-title{
