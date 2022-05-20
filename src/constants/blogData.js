@@ -1,15 +1,12 @@
+/*const creatImage=({alt,url}) =>{
+    if(alt.length!=0 && url.length!=0)
+     return null ;
+return(
+    alt,url
+)
+}*/
 const blogData = {
     title: 'blog',
-    admin: [
-        {
-            name: 'aya',
-            age: 18
-        },
-        {
-            name: 'zohaire',
-            age: 18,
-        }
-    ],
     payload: [
         {
             title: 'Programation',
@@ -17,16 +14,16 @@ const blogData = {
             user: {},
             payload: [
                 {
-                    type: 'image',
-                    payload: {
-                        url: '',
-                        alt: ''
+                    type: 'paragraphe',
+                    payload : {
+                        url : {},
+                         alt : ''
                     }
                 },
                 {
-                    type: 'paragraphe',
+                    type: 'image',
                     payload: {
-                   url: 'hhhhhh',
+                   url: '',
                    alt : ""
                     }
                 }
@@ -39,7 +36,7 @@ const blogData = {
                 {
                     type: 'image',
                     payload: {
-                        url: '',
+                        url: {},
                         alt: '',
                     }
                 },

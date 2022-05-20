@@ -1,10 +1,11 @@
 import React from 'react'
 function Article({ imageUrl, artTitle, imageAlt, artBody }) {
+console.log('fkfk')
   return (
     <div>
       <div className="card-container">
         <div className="card-image">
-          <img src={imageUrl} alt='' />
+          <img src={imageUrl} alt={imageAlt} />
         </div>
         <div className="card-content">
           <div className="card-title">
@@ -21,6 +22,7 @@ function Article({ imageUrl, artTitle, imageAlt, artBody }) {
       </div>
       </div>
       )
+    
 }
 
       export default Article;

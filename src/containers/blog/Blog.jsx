@@ -3,15 +3,23 @@ import blogData from '../../constants/blogData'
 /*const payload= BlogData.map((b) =>{ return b.payload.title})
 console.log(payload);*/
 /*const paragraphe= payload.map((b) =>{ return b.type})
+import images from '../../constants/images';
 
 console.log(paragraphe);*/
 import {Article} from '../../components'
+import images from '../../constants/images';
 import {
   Link,
   useLocation 
 } from "react-router-dom";
 const BlogData = blogData.payload.map((blog) =>{ return blog})
 console.log(BlogData)
+const p= BlogData.find((blog) => blog.title==='Programation')
+console.log(p)
+const B = p.payload.map((blog) =>{ return blog})
+console.log(B)
+/*const v=p.payload.find(blog => blog==="blogProgramation")
+console.log(v)*/
 export default function Blog() {
   return (
 <QueryParamsDemo/>
@@ -31,16 +39,16 @@ function QueryParamsDemo() {
   return (
     <div>
       <div>
-        <h2>Accounts</h2>
+        <h2>Blog</h2>
         <ul>
           <li>
-            <Link to="/Blog/account?name=Programation">Programation</Link>
+            <Link to="/Blog/account?name=Programation"></Link>
           </li>
           <li>
-            <Link to="/Blog/account?name=Robotique">Robotique</Link>
+            <Link to="/Blog/account?name=Robotique"></Link>
           </li>
           <li>
-            <Link to="/Blog/account?name=Devolopement">Devolopement</Link>
+            <Link to="/Blog/account?name=Devolopement"></Link>
           </li>
         </ul>
         <Child name={query.get("name")} />
@@ -50,15 +58,10 @@ function QueryParamsDemo() {
 }
 
 function Child({ name }) {
-<div className="child">
-  <Article />
-</div>
-   /* <div>
-   {name ? (
-            /*<Paragraphe content={}/>
-      ) : (
-        <h3>There is no name in the query string</h3>
+  console.log('gff')
+  return(
+    <div></div>
       ) 
-    </div> */
+    
   
 }

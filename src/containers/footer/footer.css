@@ -1,0 +1,40 @@
+.App__footer{
+    width:100%;
+     position: relative;
+     z-index: 1;
+     display:flex;
+     justify-content:flex-start;
+     align-items:center;
+     flex-direction:column;
+     background:var(--color-blue);
+     padding-top: 0;
+}
+.app__footer-links{
+    width: 100%;
+display:flex;
+justify-content:space-between;
+align-items: flex start;
+margin-top: 5rem;
+padding: 0 2rem;
+}
+.app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work
+{
+    padding-top: 0rem;
+flex:1;
+margin:1rem;
+text-align:center;
+}
+.app__footer-links_logo{
+    margin-bottom: 6rem;
+    margin-right: 8rem;
+}
+.app__footer-links_logo img{
+    width: 200px;
+    margin-bottom: 0,75rem;
+
+}
+.footer__copyright{
+    margin-left: 3rem;
+}

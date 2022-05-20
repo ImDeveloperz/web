@@ -1,4 +1,5 @@
-import logo from '../assets/logo.png'; 
+import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png'; 
 import header from '../assets/header.png';
 import card from '../assets/card.png';
 import quisommenous from '../assets/quisommenous.png'
@@ -6,6 +7,7 @@ import quisommenous from '../assets/quisommenous.png'
     logo,
     header,
     card,
-    quisommenous
+    quisommenous,
+    logo2
 };
 export default images; 

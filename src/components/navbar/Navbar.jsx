@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app_navbar_left">
       <div className="app_navbar_logo">
-        <img src={images.logo} alt="app logo" />
+        <img src={images.logo2} alt="app logo" />
         <h3>Innovation & Informatique</h3>
       </div>
       <ul className="app__navbar__links">
