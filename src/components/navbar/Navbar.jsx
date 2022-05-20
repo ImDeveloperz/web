@@ -19,17 +19,16 @@ const Navbar = () => {
           <NavbarList />
         </div>        
         <div className="app__navbar__links__contact">
-          Contacter Nous
-          <li className="p__opensans" > <a href='#Insta'><InstagramIcon  /></a> </li>
-          <li className="p__opensans"> <a href='#whats'><WhatsAppIcon/></a></li>
-          <li className="p__opensans"> <a href='#facbook'><FacebookIcon/></a></li>
+          
+          <li className="p__opensans" > <a href='#Insta'><InstagramIcon fontSize="small" /></a> </li>
+          <li className="p__opensans"> <a href='#whats'><WhatsAppIcon fontSize="small"/></a></li>
+          <li className="p__opensans"> <a href='#facbook'><FacebookIcon fontSize="small"/></a></li>
         </div>
       </ul>
       </div>
       <div className="app__navbar__login">
         <a href="#login" className='p__opemsans'>Se Connecter</a>
         <button className='Button'>Rejoigner Nous</button>
-         
       </div>
     </nav>
   )

@@ -14,7 +14,7 @@ export default function NavbarList() {
 
   return (
    <List
-      sx={{ width: '100%', maxWidth: 140, bgcolor: 'background.paper' ,fontSize:5,padding:0}}
+      sx={{ width: '100%', maxWidth: 140, bgcolor: 'background.paper' ,fontSize:1,padding:0}}
       component="nav"
       aria-labelledby="nested-list-subheader"
     >

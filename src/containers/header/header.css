@@ -1,4 +1,5 @@
 .app__header__wrapper{
+    align-items:center;
     display: flex;
 }
 .app__wrapper_info{
@@ -8,12 +9,15 @@ max-width: 50%;
 .app__header__wrapper{
     display:flex;
 }
+.Button__more__information{
+    background-color: var(--color-white);
+}
 .app__header__wrapper h1{
     font-size: 50px;
 }
 .app__header__wrapper p{
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 .app__header__wrapper .Button{
     margin-top: 2rem;
