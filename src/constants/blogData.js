@@ -1,5 +1,5 @@
 const creatorPara = ({ content }) => {
-    return () => return (
+    return () =>  (
         <div className="creat__para">
             <p>{content}</p>
         </div>
