@@ -1,27 +1,31 @@
 import images from './images'
 const creatorPara = ({ content }) => {
     return () => {
+        console.log("ba9i lw9t")
+        return(
         <div className="creat__para">
             <p>{content}</p>
         </div>
+        )
     }
 
 }
 const creatorTitle = ({ content }) => {
     return () => {
-        <div className="creat__Title">
+       return( <div className="creat__Title">
             <h3>{content}</h3>
-        </div>
+        </div>)
     }
 }
 const creatorImage = ({ alt, url }) => {
     if (alt.length == 0 || url.length == 0)
         return null;
     return () => { 
-        <div>
+      return(  <div>
             <img alt={alt} url={images[url]} />
         </div>
-    }
+      )    
+}
 }
 const blogData = {
     title: 'blog',

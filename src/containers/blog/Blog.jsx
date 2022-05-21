@@ -8,14 +8,16 @@ console.log(paragraphe);*/
 /*import {Article} from '../../components'
 import images from '../../constants/images';*/
 import {
+  BrowserRouter as Router,
   Link,
-  useLocation 
+  useLocation
 } from "react-router-dom";
-const BlogData = blogData.payload.map((blog) =>{ return blog})
-console.log(BlogData)
-export default function Blog(){
+
+export default function Blog() {
   return (
-<QueryParamsDemo/>
+
+    <QueryParamsDemo />
+
   );
 }
 
@@ -26,20 +28,20 @@ function useQuery() {
 }
 function QueryParamsDemo() {
   let query = useQuery();
-  console.log(query)
+  console.log(query.get("name"))
   return (
     <div>
       <div>
         <h2>Blog</h2>
         <ul>
           <li>
-            <Link to="/Blog/account?name=Programation">gg</Link>
+            <Link to="/Blog?name=Programation">programation</Link>
           </li>
           <li>
-            <Link to="/Blog/account?name=Robotique"></Link>
+            <Link to="/Blog?name=Robotique"></Link>
           </li>
           <li>
-            <Link to="/Blog/account?name=Devolopement"></Link>
+            <Link to="/Blog?name=Devolopement"></Link>
           </li>
         </ul>
         <Child name={query.get("name")} />
@@ -48,18 +50,24 @@ function QueryParamsDemo() {
   );
 }
 
-function Child({name}) {
+function Child({ name }) {
   console.log(name);
-  const articleData= BlogData.find((blog) => blog.title==name)
-console.log(articleData);
-if(!articleData)
+  const BlogData = blogData.payload.map((blog) => { return blog })
+  console.log(BlogData)
+  const articleData = BlogData.find((blog) => blog.title == name)
+  console.log(articleData);
+  if (!articleData) {
+    return (
+      <div>hh</div>
+    )
+  }
+  console.log('gg')
   return(
-    <div>hh</div>
-      ) 
-return 
-  (
     <div>
-      {articleData.payload.map((block)=> {console.log(block)})} 
+      {articleData.payload.map((block) => { 
+        console.log(block)
+        return block.payload()
+      })}
     </div>
   )
 }

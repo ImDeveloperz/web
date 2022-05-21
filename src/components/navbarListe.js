@@ -27,19 +27,19 @@ export default function NavbarList() {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 3 }}>
-          <Link href="/Blog/account?name=Programation
+          <Link href="/Blog?name=Programation
 " underline="none">
   <ListItemText primary="Programation"/>
   </Link>
           </ListItemButton>
           <ListItemButton sx={{ pl: 3 }}>
-          <Link href="/Blog/account?name=Robotique
+          <Link href="/Blog?name=Robotique
 " underline="none">
             <ListItemText primary="Robotique"/>
             </Link>
           </ListItemButton>
           <ListItemButton sx={{ pl: 3 }}>
-          <Link href="/Blog/account?name=Devolopement
+          <Link href="/Blog?name=Devolopement
 " underline="none">
             <ListItemText primary="Devloppement"/>
             </Link>
