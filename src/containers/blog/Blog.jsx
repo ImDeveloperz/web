@@ -1,5 +1,5 @@
 import React from 'react'
-/*import blogData from '../../constants/blogData'
+import blogData from '../../constants/blogData';
 /*const payload= BlogData.map((b) =>{ return b.payload.title})
 console.log(payload);*/
 /*const paragraphe= payload.map((b) =>{ return b.type})
@@ -11,22 +11,14 @@ import {
   Link,
   useLocation 
 } from "react-router-dom";
-/*const BlogData = blogData.payload.map((blog) =>{ return blog})
+const BlogData = blogData.payload.map((blog) =>{ return blog})
 console.log(BlogData)
-const p= BlogData.find((blog) => blog.title==='Programation')
-console.log(p)
-const B = p.payload.map((blog) =>{ return blog})
-console.log(B)*/
-/*const v=p.payload.find(blog => blog==="blogProgramation")
-console.log(v)*/
 export default function Blog(){
   return (
 <QueryParamsDemo/>
   );
 }
 
-// A custom hook that builds on useLocation to parse
-// the query string for you.
 function useQuery() {
   const { search } = useLocation();
 
@@ -34,13 +26,14 @@ function useQuery() {
 }
 function QueryParamsDemo() {
   let query = useQuery();
+  console.log(query)
   return (
     <div>
       <div>
         <h2>Blog</h2>
         <ul>
           <li>
-            <Link to="/Blog/account?name=Programation"></Link>
+            <Link to="/Blog/account?name=Programation">gg</Link>
           </li>
           <li>
             <Link to="/Blog/account?name=Robotique"></Link>
@@ -55,11 +48,18 @@ function QueryParamsDemo() {
   );
 }
 
-function Child({ name }) {
-  console.log('gff')
+function Child({name}) {
+  console.log(name);
+  const articleData= BlogData.find((blog) => blog.title==name)
+console.log(articleData);
+if(!articleData)
   return(
-    <div></div>
+    <div>hh</div>
       ) 
-    
-  
+return 
+  (
+    <div>
+      {articleData.payload.map((block)=> {console.log(block)})} 
+    </div>
+  )
 }

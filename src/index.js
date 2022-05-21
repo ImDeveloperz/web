@@ -1,9 +1,4 @@
 import React from 'react';
-//import App from './App';
-//import { createRoot } from 'react-dom/client';
-//const container = document.getElementById('root');
-//const root = createRoot(container);
-//root.render(<App/>);
 import App from './App';
 import ReactDOM from 'react-dom';
 import { Navbar } from './components';
@@ -15,7 +10,10 @@ const Routing = () => {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<App />} ></Route>
-                <Route exact path="/blog" element={<Blog />} ></Route>
+                <Route exact path="/blog" element={<Blog/>} ></Route>
+                <Route exact path="/Blog/account?name=Robotique" element={<Blog />} ></Route>
+                <Route  exact path="/Blog/account?name=Programmation" element={<Blog />} ></Route>
+                <Route exact path="/Blog/account?name=Devoloppement" element={<Blog />} ></Route>
             </Routes> 
             <Footer />
         </Router>

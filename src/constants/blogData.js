@@ -15,11 +15,11 @@ const creatorTitle = ({ content }) => {
     }
 }
 const creatorImage = ({ alt, url }) => {
-    if (alt.length != 0 && url.length != 0)
+    if (alt.length == 0 || url.length == 0)
         return null;
-    return () => {
+    return () => { 
         <div>
-            <img alt={alt} url={images[{url}]} />
+            <img alt={alt} url={images[url]} />
         </div>
     }
 }
@@ -27,7 +27,7 @@ const blogData = {
     title: 'blog',
     payload: [
         {
-            title: creatorTitle({ content: 'Programmation' }),
+            title:  'Programation' ,
             date: '',
             user: {},
             payload: [
@@ -41,7 +41,7 @@ const blogData = {
                 }
             ]
         }, {
-            title: creatorTitle({ content: "Robotique" }),
+            title: "Robotique" ,
             date: '',
             user: {},
             payload: [
@@ -55,7 +55,7 @@ const blogData = {
                 }
             ]
         }, {
-            title: creatorTitle({ content: "Devoloppement" }),
+            title:  "Devoloppement" ,
             date: '',
             user: {},
             payload: [
